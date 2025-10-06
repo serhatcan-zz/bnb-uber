@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>bnb-uber – Tam Sayfa PDF</title>
+  <style>
+    html, body { margin:0; padding:0; height:100%; background:#0b0e14; }
+    .viewer { position:fixed; inset:0; }
+    .viewer embed {
+      width:100%; height:100%; border:0; display:block; background:#1b2230;
+    }
+    .fallback {
+      position:fixed; inset:0; display:flex; align-items:center; justify-content:center;
+      font: 16px/1.4 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:#111; color:#fff;
+      text-align:center; padding:24px;
+    }
+    .fallback a { color:#4ea1ff; text-decoration:none; font-weight:600; }
+  </style>
+</head>
+<body>
+  <div class="viewer">
+    <embed src="assets/document.pdf#toolbar=1&navpanes=0&scrollbar=1&view=FitH" type="application/pdf" />
+  </div>
+  <noscript>
+    <div class="fallback">
+      JavaScript devre dışı. PDF'yi <a href="assets/document.pdf" target="_blank" rel="noopener">buradan aç</a>.
+    </div>
+  </noscript>
+</body>
+</html>
